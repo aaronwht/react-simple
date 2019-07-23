@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// src/App.js - displays API content
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default () => {
+   const [books, setBooks] = useState([])
+   
+   useEffect(() => {
+    (async () => {
+      const { data: { books } } = await axios.get('/books.json')
+	  setBooks(books)
+    })()
+  }, [])
+  
+   return (
+      <>
+         {books && books.map(book => {
+            return (
+              <div key={book._id}>
+                 {book.title}
+              </div>
+            )
+          })}
+      </>
+   )
 }
-
-export default App;
