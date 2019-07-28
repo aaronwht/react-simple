@@ -1,6 +1,6 @@
 // src/App.js
 import React, { useState, useEffect } from 'react' // Imports React and the useState and useEffect hooks
-import axios from 'axios' // Imports axios, the promise-based library used to retreive JSON data
+import axios from 'axios' // Imports axios, the promise-based library used to retrieve JSON data
 
 // Exporting the app module as the default
 export default () => {

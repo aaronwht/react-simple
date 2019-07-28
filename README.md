@@ -1,4 +1,6 @@
-## Simple React App using Hooks
+# Simple React App using Hooks
+
+[Contact me](https://www.aaronwht.com/contact-me) if you run into problems using this code. 
 
 This repo is created using `create-react-app` with as minimal amount of changes as possible.
 
@@ -11,7 +13,7 @@ The files to modify and add include:
 ```
 // src/App.js
 import React, { useState, useEffect } from 'react' // Imports React and the useState and useEffect hooks
-import axios from 'axios' // Imports axios, the promise-based library used to retreive JSON data
+import axios from 'axios' // Imports axios, the promise-based library used to retrieve JSON data
 
 // Exporting the app module as the default
 export default () => {
