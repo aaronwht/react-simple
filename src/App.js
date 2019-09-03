@@ -12,7 +12,7 @@ export default () => {
     // Creates an anonymous function
     (async () => {
       // Makes promise-based request and destructures the response
-      const { data: { books } } = await axios.get('/books.json')
+      const { data: { books } } = await axios.get('/books.json?number=' + Math.random())
           // Sets the book state
 	  setBooks(books)
     })() // Immediately Invoked Function Expression (IIFE)
