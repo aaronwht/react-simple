@@ -2,7 +2,7 @@
 
 [Contact me](https://www.aaronwht.com/contact-me) if you run into problems using this code. 
 
-This repo is created using `create-react-app` with as minimal amount of changes as possible.
+This repo is created using (notice npx not npm) `npx create-react-app` with as minimal amount of changes as possible.
 
 The files to modify and add include:
 - `src/index.js`
