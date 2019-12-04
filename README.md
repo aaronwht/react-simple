@@ -46,4 +46,4 @@ export default () => {
 }
 ```  
 
-If this helped you consider supporting me at [Patreon](https://www.patreon.com/aaronwht)
+If this helped you please consider making a one-time $1-$3 donation to supporting me at [Patreon](https://www.patreon.com/aaronwht)
