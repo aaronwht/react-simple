@@ -44,4 +44,6 @@ export default () => {
       </>
    )
 }
-```
+```  
+
+If this helped you consider supporting me at [Patreon](https://www.patreon.com/aaronwht)
